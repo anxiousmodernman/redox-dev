@@ -68,6 +68,7 @@
       "scripts": [
         "scripts/vagrant.sh",
         "scripts/sshd.sh",
+        "scripts/packages.sh",
         "scripts/test_persistence.sh",
         "scripts/test_clone.sh",
         "scripts/cleanup.sh"
