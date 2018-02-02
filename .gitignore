@@ -1,0 +1,7 @@
+
+# Packer artifacts
+box
+packer_cache
+
+# Vagrant
+.vagrant
