@@ -2,6 +2,7 @@
 # Packer artifacts
 box
 packer_cache
+*.box
 
 # Vagrant
 .vagrant
