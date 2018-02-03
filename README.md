@@ -1,4 +1,7 @@
-# Ubuntu packer templates
+# redox-dev
+
+Packer builds for virtual machines that can build RedoxOS. Still a WIP because
+I don't know libvirt yet.
 
 ## Create vagrant image for use with vagrant libvirt
 
