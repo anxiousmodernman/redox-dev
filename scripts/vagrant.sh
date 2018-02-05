@@ -1,5 +1,7 @@
 #!/bin/bash
 
+wd=$(pwd)
+echo "MY CURRENT WORKING DIRECTORY ${wd}"
 date > /etc/vagrant_box_build_time
 
 SSH_USER=${SSH_USERNAME:-vagrant}

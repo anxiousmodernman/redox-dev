@@ -1,3 +1,8 @@
+#!/bin/bash
+
+wd=$(pwd)
+echo "MY CURRENT WORKING DIRECTORY ${wd}"
+
 DEV_PACKAGES="
 build-essential
 curl
