@@ -1,0 +1,10 @@
+
+# systemd-networkd configuration
+# Place at /etc/systemd/network/vmbridge.network
+
+[Match]
+Name=br0
+
+[Network]
+DHCP=ipv4
+

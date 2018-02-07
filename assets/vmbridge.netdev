@@ -1,0 +1,8 @@
+
+# Configuration for systemd-networkd 
+# Place at path: /etc/systemd/network/vmbridge.netdev
+
+[NetDev]
+Name=br0
+Kind=bridge
+

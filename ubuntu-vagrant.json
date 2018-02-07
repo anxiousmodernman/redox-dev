@@ -74,6 +74,7 @@
         "scripts/nightly_rust.sh",
         "scripts/xargo.sh",
         "scripts/redox_toolchain.sh",
+        "scripts/systemd-resolved.sh",
         "scripts/cleanup.sh"
       ],
       "type": "shell"

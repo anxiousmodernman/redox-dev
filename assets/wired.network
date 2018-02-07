@@ -1,0 +1,11 @@
+
+# systemd-networkd configuration
+# Place at /etc/systemd/network/wired.network
+
+# Binds ethernet (en*) interfaces to bridge br0
+
+[Match]
+Name=en*
+
+[Network]
+Bridge=br0
