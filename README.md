@@ -3,17 +3,16 @@
 Packer builds for virtual machines that can build RedoxOS. Still a WIP because
 I don't know libvirt yet.
 
-## Create vagrant image for use with vagrant libvirt
+## Create qcow2 virtual disk image 
 
 ```bash
-packer build -var-file=ubuntu1604.json ubuntu-vagrant.json
+packer build -var-file=vars.json ubuntu-vagrant.json
 ```
 
-## Create qcow2 image for use with kvm
+**Warning: vagrant box is empty**
 
-```bash
-packer build -var-file=ubuntu1604.json ubuntu.json
-```
+The vagrant-libvirt post-processor will run, but the changes are not persisted
+to the virtual disk. Not sure why, yet.
 
 
 # Install on Arch
