@@ -3,6 +3,8 @@
 box
 packer_cache
 *.box
+# qcow2 files
+output-*
 
 # Vagrant
 .vagrant
