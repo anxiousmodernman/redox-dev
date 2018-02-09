@@ -3,7 +3,8 @@
 # virt-install
 
 virt-install --name=redox-dev --ram 1024 \
-	--disk path=/var/lib/libvirt/images/ubuntu1604,format=qcow2 \
+	--disk path=/var/lib/libvirt/images/ubuntu1604,format=qcow2,bus=virtio \
 	--os-type=linux \
-	--network=default  \
-	--boot hd --import  --console pty,target_type=virtio
+	--network=bridge:br0  \
+	--boot hd --import 
+
