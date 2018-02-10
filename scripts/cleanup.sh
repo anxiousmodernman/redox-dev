@@ -60,6 +60,10 @@ echo "==> Clearing last login information"
 >/var/log/wtmp
 >/var/log/btmp
 
+
+# CHOWN HOME
+chown -R vagrant:vagrant /home/vagrant
+
 # NOTE: Shrinking is not part of the build process
 # so this will only grow the image...
 
