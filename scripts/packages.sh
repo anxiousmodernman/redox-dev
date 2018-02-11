@@ -17,6 +17,9 @@ pkg-config
 libfuse-dev
 gcc
 software-properties-common
+autopoint
+libtool-bin
+autoconf
 "
 
 ESSENTIAL_PACKAGES="
@@ -27,3 +30,4 @@ nfs-common
 apt-get -y install $DEV_PACKAGES
 
 apt-get -y install $ESSENTIAL_PACKAGES
+
