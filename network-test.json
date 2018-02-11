@@ -1,5 +1,4 @@
 {
-  "_comment": "Build with `packer build ubuntu.json`",
   "builders": [
     {
       "type": "qemu",
@@ -103,6 +102,6 @@
     "update": "true",
     "vagrantfile_template": "",
     "version": "0.1.0",
-    "vm_name": "ubuntu1604"
+    "vm_name": "net-test"
   }
 }
