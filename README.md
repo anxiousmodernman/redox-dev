@@ -23,3 +23,7 @@ systemctl restart libvirtd
 systemctl restart virtlogd
 vagrant plugin install vagrant-libvirt
 ```
+
+----
+
+_This repo is based on [jakobadam's templates](https://github.com/jakobadam/packer-qemu-templates)._
