@@ -34,7 +34,7 @@
       "ssh_password": "{{ user `ssh_password` }}",
       "ssh_username": "{{ user `ssh_username` }}",
       "ssh_wait_timeout": "10000s",
-      "vm_name": "{{ user `vm_name` }}",
+      "vm_name": "networktest",
       "qemuargs": [
         [ "-m", "{{ user `memory` }}" ],
         [ "-smp", "cpus={{ user `cpus`}}"]
@@ -67,7 +67,8 @@
       "scripts": [
         "scripts/vagrant.sh",
         "scripts/sshd.sh",
-	    "scripts/hack_grub.sh",
+	"scripts/network.sh",
+	"scripts/hack_grub.sh",
         "scripts/cleanup.sh"
       ],
       "type": "shell"
