@@ -18,18 +18,20 @@ if [ -d "/var/lib/dhcp" ]; then
 fi 
 
 UBUNTU_VERSION=$(lsb_release -sr)
-if [[ ${UBUNTU_VERSION} == 16.04 ]] || [[ ${UBUNTU_VERSION} == 16.10 ]]; then
-    # Modified version of
-    # https://github.com/cbednarski/packer-ubuntu/blob/master/scripts-1604/vm_cleanup.sh#L9-L15
-    # Instead of eth0 the interface is now called ens5 to mach the PCI
-    # slot, so we need to change the networking scripts to enable the
-    # correct interface.
-    #
-    # NOTE: After the machine is rebooted Packer will not be able to reconnect
-    # (Vagrant will be able to) so make sure this is done in your final
-    # provisioner.
-    sed -i "s/ens3/ens5/g" /etc/network/interfaces
-fi
+#if [[ ${UBUNTU_VERSION} == 16.04 ]] || [[ ${UBUNTU_VERSION} == 16.10 ]]; then
+#    # Modified version of
+#    # https://github.com/cbednarski/packer-ubuntu/blob/master/scripts-1604/vm_cleanup.sh#L9-L15
+#    # Instead of eth0 the interface is now called ens5 to mach the PCI
+#    # slot, so we need to change the networking scripts to enable the
+#    # correct interface.
+#    #
+#    # NOTE: After the machine is rebooted Packer will not be able to reconnect
+#    # (Vagrant will be able to) so make sure this is done in your final
+#    # provisioner.
+#
+#    # NOTE(cm): This is wrong, commenting out
+#    #sed -i "s/ens3/ens5/g" /etc/network/interfaces
+#fi
 
 # Add delay to prevent "vagrant reload" from failing
 echo "pre-up sleep 2" >> /etc/network/interfaces
